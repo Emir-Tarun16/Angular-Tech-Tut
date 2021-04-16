@@ -1,12 +1,9 @@
-import { enableProdMode } from '@angular/core';
-import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
+import { platformBrowserDynamic } from "@angular/platform-browser-dynamic";  
+//platform-browser-dynamic is use for showing our application on the browser 
 
-import { AppModule } from './app/app.module';
-import { environment } from './environments/environment';
+import { AppModule } from "./app/app.module";
 
-if (environment.production) {
-  enableProdMode();
-}
 
 platformBrowserDynamic().bootstrapModule(AppModule)
-  .catch(err => console.error(err));
+//bootstrapModule is use to First load up the file first after the loading of the application
+ 
